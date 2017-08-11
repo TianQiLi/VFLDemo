@@ -43,40 +43,7 @@
 
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_sumitBtn attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_password]-30-[_sumitBtn]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_password,_sumitBtn)]];
-    
-    
-//    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-//    [view setBackgroundColor:[UIColor redColor]];
-//    view.translatesAutoresizingMaskIntoConstraints = NO;
-//    [self.view addSubview:view];
-//    view = _testView;
-//    _testView.translatesAutoresizingMaskIntoConstraints = NO;
-//    
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-10-[view]-10-|" options:0 metrics:nil views: NSDictionaryOfVariableBindings(view)]];
-//        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-10-[view]-10-|" options:0 metrics:nil views: NSDictionaryOfVariableBindings(view)]];
-//
-//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-//    view.backgroundColor = [UIColor brownColor];
-//    view.translatesAutoresizingMaskIntoConstraints = NO;
-//    [self.view addSubview:view];
-//    
-//    //通过宏映射成[NSDictionary dictionaryWithObjectsAndKeys:v1, @"v1", v2, @"v2", nil];
-//    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(view);
-//    //约束1 横向
-//    [self.view addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[view]-20-|"
-//                                             options:0
-//                                             metrics:nil
-//                                               views:viewsDictionary]];
-//    //约束2 纵向
-//    [self.view addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[view]-200-|"
-//                                             options:0
-//                                             metrics:nil
-//                                               views:viewsDictionary]];
-    
-  
-    
+
     
     
 }
